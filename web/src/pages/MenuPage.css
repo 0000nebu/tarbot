@@ -1,0 +1,14 @@
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;   
+}
+
+.profileImage {
+  height: 600px;
+  padding: 20px;
+}
+
+.readingleImage{
+    height: 700px;
+}

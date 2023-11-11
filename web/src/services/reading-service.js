@@ -1,12 +1,15 @@
-import axios from "axios"
+import service from './base-api'
 
+export function getReadings(data) {
+    return service.get('/profile', { data });
+}
 
-const service = axios.create ({
-    baseURL: import.meta.env.REACT_APP_BASE_API_URL || "http://127.0.0.1:3000/v1" 
-})
+export function readingsDetail(id, data) {
+    return service.get(`/readings/${id}`, {  data,  });
+}
 
-export function login(data){
-    return service.post('/login', data)
+export function multiReading(data) {
+    return service.get('/readings', { data });
 }
 
 

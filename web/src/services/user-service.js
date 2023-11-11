@@ -1,15 +1,11 @@
-import axios from "axios"
+import service from './base-api'
 
-
-const service = axios.create ({
-    baseURL: import.meta.env.REACT_APP_BASE_API_URL || "http://127.0.0.1:3000/v1" 
-})
-
-export function login(data){
+export function login(data) {
     return service.post('/login', data)
+        .then(response => response.data)
 }
 
-export function create(data){
+export function create(data) {
     return service.post('/users', data)
 }
 
