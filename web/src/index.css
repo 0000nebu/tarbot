@@ -2,9 +2,8 @@ body {
     background-color: #2a2e4f;
 }
 
-.copas{
+.copas {
     display: flex;
-   flex-direction: row;
-justify-items: center;
+    flex-direction: row;
+    justify-items: center;
 }
-
