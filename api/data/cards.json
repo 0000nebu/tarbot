@@ -1,0 +1,398 @@
+[
+  {
+      "name": "The Fool",
+      "description": "The Fool card is the wild card of the Tarot deck. It represents spontaneity, unpredictability, and a free spirit. The Fool is often depicted as a carefree individual about to step off a cliff, symbolizing a leap into the unknown. This card encourages you to embrace new experiences and take risks with an open heart and mind.",
+      "card": {
+          "straight": {
+              "past": "When The Fool appears in the past position, it suggests a past marked by spontaneity, unpredictability, and a free spirit. You may have taken risks with an open heart and mind, leading to your current situation.",
+              "present": "The Fool card embodies spontaneity, unpredictability, and the embrace of a free spirit. In the present position, it suggests that you're currently in a phase of spontaneity and carefree exploration. You might be taking unexpected risks and approaching life with an open heart and mind.",
+              "future": "The Fool card promises an exciting future marked by spontaneity, unpredictability, and the pursuit of your free spirit. You'll continue taking daring risks with an open heart and mind, embarking on new adventures with optimism."
+          },
+          "reverse": {
+              "past": "When The Fool appears reversed in the past position, it suggests that there might have been a past tendency towards recklessness or impulsivity that led to missed opportunities or a less-than-ideal start to a journey.",
+              "present": "In the present, The Fool reversed suggests a tendency towards recklessness or impulsivity that might be affecting your current situation, leading to missed opportunities. It's essential to exercise more caution in your decisions.",
+              "future": " In the future, The Fool reversed suggests potential consequences of continued recklessness or impulsive actions, which may result in missed opportunities. Exercise caution in your future endeavors."
+          }
+      },
+      "image": "https://res.cloudinary.com/dtuski5bi/image/upload/v1698856554/tarbot/qxb4qmxaol7tbytfhhuy.png",
+      "interpretation": "hola"
+  },
+  {
+      "name": "The Magician",
+      "description": "The Magician card is all about manifestation and taking action. It represents the power to turn your dreams into reality. The Magician is usually shown with one hand pointing up to the sky and the other down to the earth, symbolizing the connection between the spiritual and material worlds. This card reminds you that you have the tools and skills to create the life you desire.",
+      "card": {
+          "straight": {
+              "past": "When The Magician appears in the past position, it suggests a period of manifestation and decision-making where you utilized your skills and resources to shape your current reality. It signifies a time of action, creativity, and conscious manifestation, setting the stage for your present circumstances.",
+              "present": "The Magician represents the power of manifestation and taking action. In the present, it signifies a time of conscious creation and harnessing your skills and resources to achieve your goals. You have the tools to shape your reality and manifest your desires.",
+              "future": "In the future, The Magician card foresees a time of conscious creation and taking purposeful action. You'll continue to wield your skills and resources to shape your reality, manifesting your desires with confidence."
+          },
+          "reverse": {
+              "past": " In the reversed past position, The Magician signifies that opportunities for manifesting one's desires in the past may have been squandered or not fully realized due to a lack of focus or direction.",
+              "present": "The Magician reversed in the present indicates that you've missed opportunities to manifest your desires due to a lack of focus or direction. It's time to regain control over your goals and actions.",
+              "future": "n the future, The Magician reversed indicates potential future outcomes resulting from missed opportunities to manifest your desires. Be more focused and deliberate in your future actions."
+          }
+      },
+      "image": "https://res.cloudinary.com/dtuski5bi/image/upload/v1698856556/tarbot/wtvodflummpcxdoru8uj.png",
+      "interpretation": "hola"
+  },
+  {
+      "name": "The High Priestess",
+      "description": "The High Priestess card represents intuition, mystery, and the subconscious mind. She is often depicted as a woman seated between two pillars, holding a scroll. This card encourages you to trust your inner wisdom and explore the deeper, hidden aspects of your life. It suggests that answers and insights can be found by delving into your own psyche.",
+      "card": {
+          "straight": {
+              "past": "The High Priestess in the past position signifies that your past was influenced by deep intuition, mystery, and a connection to the subconscious. You likely relied on your inner guidance and explored the unknown. This card encourages you to reflect on these experiences to gain insight into your current situation.",
+              "present": "The reversed High Priestess in the present implies that you may be ignoring your intuition or inner wisdom, which could have consequences for your current situation. It's crucial to reconnect with your inner guidance.",
+              "future": " The High Priestess hints at a future where your deep intuition and exploration of the subconscious will play a central role. Trust in your inner wisdom as you continue to navigate the mysteries of life with grace and insight."
+          },
+          "reverse": {
+              "past": " When The High Priestess is reversed in the past position, it implies that you may have ignored your intuition or inner wisdom in past situations. This could have led to missed insights or difficulties in understanding hidden truths.",
+              "present": "The reversed High Priestess in the present suggests ignoring your intuition or inner wisdom, which may have consequences for your current situation.",
+              "future": " In the future, the reversed High Priestess implies potential consequences of ignoring your intuition or inner wisdom. Pay closer attention to your"
+          }
+      },
+      "image": "https://res.cloudinary.com/dtuski5bi/image/upload/v1698856555/tarbot/grfkfxxzdg2c3japv7jm.png",
+      "interpretation": "hola"
+  },
+  {
+      "name": "The Empress",
+      "description": "The Empress card embodies nurturing and abundance. She is often depicted as a pregnant woman or a mother figure. This card signifies fertility, creativity, and the bountiful gifts of the natural world. It suggests a time of growth, nurturing, and the realization of your potential.",
+      "card": {
+          "straight": {
+              "past": " In the past position, The Empress indicates a period marked by abundance, fertility, or maternal influence. It may point to a time of growth and nurturing that has contributed to your current situation. The energies of the Empress have played a significant role in your past.",
+              "present": "The Empress card symbolizes nurturing, abundance, and the gifts of the natural world. In the present, it indicates a time of growth, nurturing, and the realization of your potential. You are in a phase of abundance and creativity.",
+              "future": " The Empress card envisions a future marked by growth, abundance, and the nurturing of your creative potential. You'll find continued fulfillment in the bountiful gifts of the natural world and experience moments of maternal influence and creativity."
+          },
+          "reverse": {
+              "past": " In the reversed past position, The Empress suggests that nurturing and caring aspects in your past might have been neglected or unfulfilled, possibly leading to a lack of abundance or harmony.",
+              "present": "In the present, The Empress reversed suggests that nurturing and caring aspects may be neglected, resulting in a lack of abundance or harmony. Focus on self-care and fostering a more nurturing environment.",
+              "future": "In the reversed future position, abundance and fertility might be hindered, and issues related to nurturing or family relationships could arise, prompting you to reconsider how you care for and nurture your projects and relationships."
+          }
+      },
+      "image": "https://res.cloudinary.com/dtuski5bi/image/upload/v1698856556/tarbot/brfyiuv4wocpnkqnp0sw.png",
+      "interpretation": "hola"
+  },
+  {
+      "name": "The Emperor",
+      "description": "The Emperor card embodies authority, leadership, and structure. He is often depicted as a powerful ruler seated on a throne. This card signifies the need for order and control in your life. It suggests a time to take charge, establish boundaries, and assert your authority.",
+      "card": {
+          "straight": {
+              "past": " The Emperor in the past suggests a time when authority, structure, or paternal influence had a notable impact on your life. It signifies a period where you may have encountered strong leadership or a need for order, which has influenced your current circumstances.",
+              "present": "The Emperor represents authority, leadership, and structure. In the present, it suggests that you are currently in a position where you need to assert your authority, establish boundaries, and bring order to your life.",
+              "future": " In your future, The Emperor card suggests a time when you'll assert your authority, establish boundaries, and bring order to your life. You'll embrace leadership with wisdom and a sense of structure."
+          },
+          "reverse": {
+              "past": "When The Emperor appears reversed in the past position, it indicates that there were issues with authority figures or difficulties in maintaining control in the past. It might have led to challenges in establishing structure and order.",
+              "present": "The Emperor reversed in the present indicates present issues with authority figures or difficulties in maintaining control. It's essential to find a more balanced and authoritative approach to your challenges.",
+              "future": " When reversed in the future, you may feel like you're losing control or that authority in your life is imbalanced, urging you to find a balance between control and flexibility."
+          }
+      },
+      "image": "https://res.cloudinary.com/dtuski5bi/image/upload/v1698856557/tarbot/g8rdbqigb7qizmr3mwxm.png",
+      "interpretation": "hola"
+  },
+  {
+      "name": "The Hierophant",
+      "description": "The Hierophant card represents tradition, spirituality, and guidance. He is often shown as a religious or spiritual leader. This card encourages seeking wisdom from established sources, such as institutions or mentors. It suggests a time for adherence to spiritual or moral principles.",
+      "card": {
+          "straight": {
+              "past": " The Hierophant in the past position suggests your past involved conformity to tradition, structured beliefs, and seeking guidance from institutions or mentors. Reflect on how these experiences have influenced your present situation.",
+              "present": " The Hierophant embodies tradition, spirituality, and guidance. In the present position, it encourages seeking wisdom from established sources, such as mentors or institutions. It's a time for adhering to spiritual or moral principles.",
+              "future": " The future holds a continuation of your adherence to tradition, spirituality, and guidance, as indicated by The Hierophant. Seek wisdom from established sources and mentors as you maintain your commitment to spiritual and moral principles."
+          },
+          "reverse": {
+              "past": "Past resistance to tradition or conformity: In the past position, the reversed Hierophant suggests that there may have been resistance to conforming to traditional beliefs or societal norms in the past. This could have caused conflict or a struggle to find spiritual guidance.",
+              "present": "In the present, the reversed Hierophant suggests resistance to conforming to traditional beliefs or societal norms, leading to conflict or a struggle to find spiritual guidance. Embrace a more open-minded approach to your beliefs.",
+              "future": "n the reversed future, you may be resisting traditional or spiritual guidance, leading to a sense of rebellion or non-conformity. It's crucial to find your own path while respecting the wisdom of tradition."
+          }
+      },
+      "image": "https://res.cloudinary.com/dtuski5bi/image/upload/v1698856555/tarbot/lf9slc0wfyqljbegi67w.png",
+      "interpretation": "hola"
+  },
+  {
+      "name": "The Lovers",
+      "description": "The Lovers card is about love, relationships, and choices. It usually depicts a couple, often with an angel watching over them. This card signifies deep connections, choices in love, and the union of opposites. It suggests a time for making choices from the heart.",
+      "card": {
+          "straight": {
+              "past": " The Lovers card in the past position represents a history filled with important relationships, choices, or partnerships. It implies that these past connections have played a significant role in shaping your current circumstances and the decisions you face. Take a moment to contemplate how these relationships have left an impact on your life.",
+              "present": " The Lovers card is about love, relationships, and choices. In the present, it signifies a phase of important relationships and choices. You're faced with decisions from the heart, and deep connections play a central role in your current life.",
+              "future": " The Lovers card anticipates a future filled with important relationships, choices, and deep connections. You'll continue to make decisions from the heart, guided by the power of love and partnership, leading to a life rich in meaningful connections."
+          },
+          "reverse": {
+              "past": "When The Lovers are reversed in the past position, it signifies that there may have been difficulties or choices made in past relationships that have influenced your current situation. It might indicate past conflicts or unwise decisions in matters of the heart.",
+              "present": "The Lovers reversed in the present position signifies current difficulties or unwise decisions in matters of the heart, influencing your current situation. It's essential to resolve conflicts and make more balanced choices.",
+              "future": "When in reverse in the future, conflicts may arise in your relationships, and there could be a lack of harmony in your love life. It's a time to address issues and make choices carefully, considering the consequences."
+          }
+      },
+      "image": "https://res.cloudinary.com/dtuski5bi/image/upload/v1698856556/tarbot/npzt5l2qll46vxvubsfr.png",
+      "interpretation": "hola"
+  },
+  {
+      "name": "The Chariot",
+      "description": "The Chariot card represents victory, determination, and control. It typically shows a charioteer steering two opposing forces. This card encourages you to move forward with focus and determination. It suggests a time for overcoming challenges and achieving your goals.",
+      "card": {
+          "straight": {
+              "past": " The Chariot in the past position signifies a history of determination, self-discipline, and overcoming challenges. It's a reminder that your past successes resulted from your strong willpower. Reflect on these qualities to help you move forward.",
+              "present": "The Chariot card represents victory, determination, and control. In the present, it suggests that you are currently moving forward with focus and determination. You're on the path to overcoming challenges and achieving your goals.",
+              "future": " Your path ahead promises success, driven determination, and strong self-control. You're about to achieve victory by steering your life in the direction you desire. Expect to overcome challenges and reach your goals as you harness your inner strength. Stay focused on your chosen path, for the future holds triumph."
+          },
+          "reverse": {
+              "past": "In the reversed past position, The Chariot suggests that there may have been a lack of direction or control in the past, leading to feelings of being off-course or stuck.",
+              "present": "In the present, The Chariot reversed suggests a lack of direction or control, leading to feelings of being off-course or stuck. It's time to regain control and focus on your goals.",
+              "future": "In the reversed future position, you might experience a loss of control or direction in your pursuits. It's important to regain focus and develop a clear plan to achieve your goals."
+          }
+      },
+      "image": "https://res.cloudinary.com/dtuski5bi/image/upload/v1698856557/tarbot/pmk51kylcrchqkzbyqgo.png",
+      "interpretation": "hola"
+  },
+  {
+      "name": "Strength",
+      "description": "The Strength card is about inner strength, courage, and taming one's impulses. It often depicts a person gently holding a lion's mouth. This card signifies the power of gentleness and inner resolve. It suggests a time for facing challenges with patience and compassion.",
+      "card": {
+          "straight": {
+              "past": "When Strength appears reversed in the past position, it signifies that there were challenges or struggles in the past related to finding and harnessing inner strength and courage.",
+              "present": "The Strength card embodies resilience, courage, and mastering one's impulses. Currently, it signifies that you're facing challenges with fortitude and wisdom, tapping into your inner strength to overcome obstacles.",
+              "future": "The Strength card offers a glimpse into your future marked by inner resilience, courage, and the mastery of your impulses. You will face challenges with grace, harnessing your inner strength to overcome obstacles. Trust in your own power to guide you."
+          },
+          "reverse": {
+              "past": "When Strength appears reversed in the past position, it signifies that there were challenges or struggles in the past related to finding and harnessing inner strength and courage.",
+              "present": "When Strength appears reversed in the present, it signifies current challenges or struggles related to finding and harnessing inner strength and courage. Work on building your inner fortitude.",
+              "future": " In the reversed future, you may be struggling to find inner strength or patience, and it's essential to work on self-confidence and self-control to overcome obstacles."
+          }
+      },
+      "image": "https://res.cloudinary.com/dtuski5bi/image/upload/v1698856556/tarbot/jg9ztyetg42iqphukmdd.png",
+      "interpretation": "hola"
+  },
+  {
+      "name": "The Hermit",
+      "description": "The Hermit card represents introspection, solitude, and wisdom. It typically shows an old man with a lantern. This card encourages self-reflection, seeking answers within, and finding your own path. It suggests a time for inner guidance and solitude.",
+      "card": {
+          "straight": {
+              "past": "The Hermit in the past represents a phase of introspection, a quest for inner knowledge, and solitude in the search for answers. It implies that you've spent time in self-reflection and seeking wisdom from within, which has shaped your present situation.",
+              "present": "The Hermit card embodies introspection, solitude, and wisdom. In the present position, it encourages self-reflection, seeking answers from within, and finding your own path. It's a time for inner guidance and solitude.",
+              "future": "In the future, the Hermit card foresees a period of introspection, solitude, and deep inner wisdom. You'll embark on a journey of self-discovery, seeking answers within, and finding your unique path. Embrace this time of inner guidance and self-awareness."
+          },
+          "reverse": {
+              "past": "Past isolation or neglecting introspection: In the reversed past position, The Hermit suggests that there may have been a period in the past where you neglected introspection or isolated yourself from others. This could have led to feelings of loneliness or a lack of self-discovery.",
+              "present": "The Hermit reversed in the present suggests a current period of neglecting introspection or isolating yourself from others, leading to feelings of loneliness or a lack of self-discovery. Seek more balanced social and introspective experiences.",
+              "future": " If it appears reversed in the future, you may resist taking time for self-reflection and solitude, which could hinder your personal growth. Consider the importance of introspection in your journey."
+          }
+      },
+      "image": "https://res.cloudinary.com/dtuski5bi/image/upload/v1698856554/tarbot/r0yyibgrlbblbzgnmtng.png",
+      "interpretation": "hola"
+  },
+  {
+      "name": "The Wheel of Fortune",
+      "description": "The Wheel of Fortune card represents cycles, destiny, and change. It typically depicts a wheel with figures ascending and descending. This card reminds you that life is filled with ups and downs and that change is inevitable. It suggests a time to embrace the ebb and flow of your life's journey.",
+      "card": {
+          "straight": {
+              "past": "In the past position, The Wheel of Fortune suggests that you've experienced cycles, destiny, and change that have influenced your present circumstances. It signifies a period when you embraced the ebb and flow of life's journey and recognized the inevitability of change.",
+              "present": "The Wheel of Fortune represents cycles, destiny, and change. In the present, it suggests that you are embracing the ebb and flow of life's journey. You understand the inevitability of change and are ready to adapt.",
+              "future": "The Wheel of Fortune promises cycles, destiny, and change in your future. You'll navigate life's natural rhythms with grace, understanding the ebb and flow of existence. Embrace change as an opportunity for growth and evolution."
+          },
+          "reverse": {
+              "past": " When The Wheel of Fortune is reversed in the past position, it suggests that there may have been past periods where cycles of change, luck, or fortune were disrupted or stagnant. This could have resulted in missed opportunities or a sense of being stuck in a negative cycle.",
+              "present": "In the present, The Wheel of Fortune reversed indicates that you may be experiencing cycles of stagnation or missed opportunities. It could indicate a period where the normal ebb and flow of luck and fortune is disrupted.",
+              "future": " When in the reversed future, there may be delays or setbacks in your life, leaving you feeling stuck. These are temporary challenges, and the wheel will eventually turn in your favor."
+          }
+      },
+      "image": "https://res.cloudinary.com/dtuski5bi/image/upload/v1698856557/tarbot/dhgieljo7trp4ig5ngkn.png",
+      "interpretation": "hola"
+  },
+  {
+      "name": "Justice",
+      "description": "The Justice card embodies fairness, balance, and integrity. It often shows a figure holding scales. This card signifies the need for truth and fairness in your actions and decisions. It suggests a time to make fair judgments and uphold ethical principles.",
+      "card": {
+          "straight": {
+              "past": "Justice in the past position indicates that you've been focused on fairness, balance, and integrity in your actions and decisions. It suggests that ethical principles and truth played a role in shaping your current situation. Your past choices based on justice have influenced where you are now.",
+              "present": "Justice embodies fairness, balance, and ethical judgment. In the present, it indicates a focus on truth and equity in your actions and choices. You're making just decisions and upholding moral principles.",
+              "future": "In the future, the Justice card assures fairness, balance, and ethical judgments in your decisions and actions. You'll be guided by truth and a strong sense of justice. Uphold moral principles and make equitable choices."
+          },
+          "reverse": {
+              "past": " When Justice appears reversed in the past position, it suggests that there may have been past situations where justice was not served, or where fairness and balance were lacking.",
+              "present": " In the present, Justice reversed implies that there are current situations where justice is not being served, or where fairness and balance are lacking. Seek resolution and fairness in your present circumstances.",
+              "future": "In the reversed future, there could be unfairness or unresolved legal matters. Seek balance and fairness in your actions and decisions."
+          }
+      },
+      "image": "https://res.cloudinary.com/dtuski5bi/image/upload/v1698856555/tarbot/c2rxngzwfxo7pq9mr5yl.png",
+      "interpretation": "hola"
+  },
+  {
+      "name": "The Hanged Man",
+      "description": "The Hanged Man card represents surrender, release, and a new perspective. It typically depicts a person hanging upside down. This card encourages you to let go of control and see things from a different angle. It suggests a time for sacrifice and gaining a fresh outlook.",
+      "card": {
+          "straight": {
+              "past": "When The Hanged Man appears in the past position, it signifies a time of surrender, release, and gaining a new perspective. It implies that you let go of control and viewed things from a different angle, which influenced your current situation.",
+              "present": "The Hanged Man represents surrender, release, and gaining a new perspective. In the present position, it signifies a willingness to let go of control and view things from a different angle. You're open to sacrifice and gaining fresh insights.",
+              "future": "The Hanged Man envisions your future characterized by surrender, release, and a fresh perspective. You'll willingly let go of control and gain new insights. Embrace the wisdom that comes from seeing things from a different angle."
+          },
+          "reverse": {
+              "past": "In the reversed past position, The Hanged Man indicates a resistance to letting go of something in the past. It could symbolize a reluctance to change one's perspective or surrender to a situation.",
+              "present": " In the present, The Hanged Man reversed indicates resistance to letting go of something, possibly causing delays or hindrances in your current situation. Embrace change and release what no longer serves you.",
+              "future": "If it appears reversed in the future, you may have difficulty letting go or resisting necessary sacrifices. Embrace change and surrender to it, as it can lead to a better future."
+          }
+      },
+      "image": "https://res.cloudinary.com/dtuski5bi/image/upload/v1698856556/tarbot/jbomen8ymzn4qovcrlul.png",
+      "interpretation": "hola"
+  },
+  {
+      "name": "Death",
+      "description": "The Death card signifies transformation, change, and rebirth. It often depicts the Grim Reaper. This card is not about literal death but the end of one phase and the start of another. It suggests a time for letting go of the old and embracing the new.",
+      "card" : {
+      "straight": {
+          "past": "In the past position, the Death card signifies a time of transformation, change, and rebirth. It suggests that you've experienced the end of one phase and the beginning of another, which has contributed to your current circumstances.",
+          "present": "The Death card signifies transformation, change, and rebirth. In the present, it suggests that you are currently undergoing a significant transformation, letting go of the old, and embracing a new phase in life.",
+          "future": " The future holds transformation, transition, and rebirth, as symbolized by the Death card. You'll experience a significant metamorphosis, shedding the old to make way for the new. Embrace this renewal with open arms."
+      },
+      "reverse": {
+          "past": "When Death is reversed in the past position, it signifies that there may have been resistance to necessary changes or transformations in the past, which could have hindered growth.",
+          "present": " In the present, Death reversed suggests resistance to necessary changes or transformations, which may hinder growth or progress. Embrace change and allow for personal transformation.",
+          "future": "In the reversed future, you may resist change or transformation. Embrace the need for rebirth and renewal in your life."
+      }
+  },
+      "image": "https://res.cloudinary.com/dtuski5bi/image/upload/v1698856554/tarbot/hwnotigxttjxayef7mml.png",
+      "interpretation": "hola"
+  },
+  {
+      "name": "Temperance",
+      "description": "The Temperance card represents balance, harmony, and moderation. It typically shows an angel mixing two cups. This card encourages finding the middle path and blending opposites. It suggests a time for patience and bringing balance to your life.",
+      "card": {
+      "straight": {
+          "past": "emperance in the past position indicates a period when you sought balance, harmony, and moderation. It signifies a time when you blended opposites and found the middle path, shaping your present situation with patience and equilibrium.",
+          "present": "Temperance represents balance, harmony, and moderation. In the present, it indicates a time of balance, blending opposites, and finding the middle path. You are exercising patience and equilibrium.",
+          "future": "In your future, Temperance promises balance, harmony, and finding the middle path. You'll master the art of blending opposites and maintaining equilibrium. Patience and balance will guide your journey."
+      },
+      "reverse": {
+          "past": "In the past position, the reversed Temperance card suggests that there were past issues with maintaining balance or patience. It may have led to a lack of harmony and moderation.",
+          "present": " In the present, Temperance reversed implies current issues with maintaining balance or patience, leading to a lack of harmony and moderation. Strive for greater balance and patience in your present situation.",
+          "future": "In the reversed future, there may be an imbalance, particularly regarding your emotions and actions. Seek harmony and moderation in your endeavors."
+      }
+      },
+      "image": "https://res.cloudinary.com/dtuski5bi/image/upload/v1698856556/tarbot/a66iada9qki7lueditlu.png",
+      "interpretation": "hola"
+  },
+  {
+      "name": "The Devil",
+      "description": "The Devil card symbolizes temptation, bondage, and materialism. It often shows a creature with horns. This card serves as a reminder to examine your attachments and desires. It suggests a time for breaking free from unhealthy patterns and illusions.",
+      "card": {
+      "straight": {
+          "past": "When The Devil appears in the past position, it suggests a time when you faced temptation, bondage, or materialism. This card represents a period when you may have needed to break free from unhealthy patterns and illusions, which has influenced your current circumstances.",
+          "present": "The Devil card represents temptation, materialism, and bondage. In the present, it warns against unhealthy attachments and the necessity of breaking free from confining patterns and illusions.",
+          "future": "The Devil card forewarns of temptation, materialism, and potential bondage in the future. You'll encounter challenges, but it's a reminder to break free from unhealthy patterns and illusions. Your strength will carry you forward."
+      },
+      "reverse": {
+          "past": "When The Devil appears reversed in the past position, it indicates that there may have been a past release from situations or habits that felt constricting or controlling.",
+          "present": "When The Devil appears reversed in the present, it indicates a current release from situations or habits that felt constricting or controlling. Embrace your newfound freedom and empowerment.",
+          "future": "When reversed in the future, you might break free from unhealthy attachments or addictions. Release yourself from the chains that bind you to negative patterns."
+      }
+      },
+      "image": "https://res.cloudinary.com/dtuski5bi/image/upload/v1698856556/tarbot/a66iada9qki7lueditlu.png",
+      "interpretation": "hola"
+  },
+  {
+      "name": "The Tower",
+      "description": "The Tower card signifies sudden upheaval, revelation, and change. It often depicts a tower being struck by lightning. This card represents a shake-up that can be both destructive and liberating. It suggests a time for embracing unexpected change and rebuilding.",
+      "card": {
+      "straight": {
+          "past": "When The Tower is in the past position, it signifies a shocking event or a radical change that significantly impacted your life. It suggests that a past upheaval or revelation has contributed to your current situation, leading to transformation and rebuilding.",
+          "present": "The Tower card signifies sudden upheaval, revelation, and change. In the present, it suggests that you are currently undergoing a profound transformation, embracing unexpected change and the opportunity for rebuilding",
+          "future": "In your future, the Tower card anticipates sudden upheaval, revelation, and transformation. Embrace the profound changes that await, knowing that they bring the opportunity for liberation and rebuilding. Trust in the renewal that follows upheaval."
+      },
+      "reverse": {
+          "past": "In the reversed past position, The Tower suggests that there may have been situations in the past where major upheaval or disruption was avoided or minimized.",
+          "present": " In the present, The Tower reversed suggests avoiding or mitigating major upheaval or disruptions, leading to a relatively stable current situation. Continue to navigate changes with caution.",
+          "future": "In the reversed future, while unexpected events can still occur, they might not be as destructive as you fear. You have the opportunity to minimize the impact of upheavals through careful planning."
+      }
+      },
+      "image": "https://res.cloudinary.com/dtuski5bi/image/upload/v1698856557/tarbot/wk6wrkamejopunojcuyv.png",
+      "interpretation": "hola"
+  },
+  {
+      "name": "The Star",
+      "card": {
+      "description": "The Star card is about hope, inspiration, and healing. It typically shows a woman pouring water into a pool. This card encourages optimism and the belief that better times are coming. It suggests a time for healing, inspiration, and renewed faith.",
+      "straight": {
+          "past": "When The Star is reversed in the past position, it implies that there may have been a lack of hope or inspiration in the past. It could indicate a period of darkness or uncertainty.",
+          "present": "The Star card is about hope, inspiration, and healing. In the present, it indicates that you're currently guided by optimism and faith in better times. It's a time for healing, inspiration, and renewed faith.",
+          "future": "The Star card in your future holds hope, inspiration, and healing. It promises optimism and the belief in brighter days ahead. You'll experience moments of healing, inspiration, and renewed faith. Keep your heart open to the possibilities."
+      },
+      "reverse": {
+          "past": "When The Star is reversed in the past position, it implies that there may have been a lack of hope or inspiration in the past. It could indicate a period of darkness or uncertainty.",
+          "present": " In the present, The Star reversed implies a current lack of hope or inspiration, which may lead to feelings of darkness or uncertainty. Seek sources of inspiration and hope in your life.",
+          "future": "In the reversed future, you may be struggling to find hope and inspiration. Keep faith in your dreams, even during challenging times, as the stars will guide you to brighter days."
+      }    
+      },
+      "image": "https://res.cloudinary.com/dtuski5bi/image/upload/v1698856555/tarbot/ktv7w0jsroyhe8u4qfya.png",
+      "interpretation": "hola"
+  },
+  {
+      "name": "The Moon",
+      "description": "The Moon card represents intuition, the unconscious, and illusion. It often shows a moon with two dogs barking. This card encourages you to trust your instincts and explore the mysteries of the subconscious. It suggests a time for navigating through uncertainty and facing your fears.",
+      "card": {
+      "straight": {
+          "past": "The Moon in the past position represents a time when you trusted your instincts, explored the mysteries of the subconscious, and navigated through uncertainty. It has played a role in shaping your current situation.",
+          "present": "The Moon card represents intuition, the unconscious, and illusion. In the present, it suggests that you're navigating through uncertainty, trusting your instincts, and facing your fears.",
+          "future": "The Moon card envisions your future, marked by intuition, exploration of the subconscious, and facing illusions. Trust your instincts as you navigate through uncertainty and confront your deepest fears. A new level of self-awareness awaits."
+      },
+      "reverse": {
+          "past": " In the reversed past position, The Moon suggests that there may have been moments of clarity or emotional revelations in the past that helped you navigate uncertainty and illusions.",
+          "present": "When The Moon is reversed in the present, it suggests current moments of clarity or emotional revelations that help you navigate uncertainty and illusions. Embrace these insights.",
+          "future": "When in reverse in the future, there could be confusion or deceit, leading to illusions or misunderstandings. Stay vigilant and seek clarity in your path."
+      }
+      },
+      "image": "https://res.cloudinary.com/dtuski5bi/image/upload/v1698856557/tarbot/vugonvm9szs5yfwq4hpo.png",
+      "interpretation": "hola"
+  },
+  {
+      "name": "The Sun",
+      "description": "The Sun card in Tarot is a highly positive and uplifting card that represents joy, success, and enlightenment.",
+      "card":{
+      "straight": {
+          "past": "When The Sun appears in the past position, it represents a past period of joy, clarity, and success. You've experienced happiness, vitality, and a positive outlook that has influenced your present situation.",
+          "present": "The Sun card is a highly positive and uplifting card that represents joy, success, and enlightenment. In the present, it signifies a time of happiness, clarity, and success. Embrace the vitality and positive outlook it brings.",
+          "future": "The Sun card shines a light on your future, filled with joy, success, and enlightenment. You'll bask in happiness, clarity, and accomplishments. Your positivity and vitality will guide you towards a bright future."
+      },
+      "reverse": {
+          "past": " When The Sun appears reversed in the past position, it signifies that there may have been a lack of clarity or vitality in the past. It could suggest a period of reduced enthusiasm or optimism.",
+          "present": " In the present, The Sun reversed indicates a current lack of clarity or vitality, leading to reduced enthusiasm or optimism. Seek clarity and renewed energy in your life.",
+          "future": "In the reversed future, your enthusiasm and vitality may temporarily wane, but this is just a passing phase. Keep a positive outlook and stay connected to your inner child."
+      }
+      },
+      "image": "https://res.cloudinary.com/dtuski5bi/image/upload/v1698856556/tarbot/ktzbzyj6h3p6gdagbesz.png",
+      "interpretation": "hola"
+  },
+  {
+      "name": "Judgment",
+      "description": "The Judgment card represents a time of reckoning, transformation, and renewal. It often shows people rising from their graves. This card signifies a call to self-reflection, facing the consequences of your actions, and making amends. It suggests a time for self-forgiveness and a fresh start.",
+      "card": {
+      "straight": {
+          "past": " In the past position, Judgment indicates a time of reckoning, transformation, and renewal. You may have faced a period of self-reflection, facing the consequences of your actions, and making amends, which has contributed to your current situation.",
+          "present": "The Judgment card signifies a time of reckoning, transformation, and renewal. In the present, you are faced with a period of self-reflection, accountability for your actions, and the chance for self-forgiveness and a fresh start.",
+          "future": "The Judgment card points to a future characterized by self-reflection, transformation, and new beginnings. You'll face a reckoning, make amends, and experience a fresh start. Embrace the opportunities for growth and personal renewal."
+      },
+      "reverse": {
+          "past": "  In the reversed past position, Judgment indicates that there may have been delays or hesitations in self-reflection and making important decisions based on your past experiences.",
+          "present": "In the present, Judgment reversed suggests delays or hesitations in self-reflection and decision-making based on your past experiences. Take your time to reflect and make informed choices.",
+          "future": "n the reversed future, you may resist a call to transformation or self-evaluation. Embrace the opportunity for redemption and personal growth."
+      }
+      },
+      "image": "https://res.cloudinary.com/dtuski5bi/image/upload/v1698856555/tarbot/nqnenxzimqe9qbkwcakd.png",
+      "interpretation": "hola"
+  },
+  {
+      "name": "The World",
+      "description": "The World card in Tarot signifies the successful culmination of a significant life phase or project. It represents the sense of fulfillment, the realization of important goals, and a feeling of accomplishment. When The World appears in a Tarot reading, it suggests that you have come to a major turning point in your life, and it's time to celebrate your achievements and acknowledge the successful completion of a significant journey. It marks a time of personal satisfaction, where you are in harmony with the world around you, having fulfilled your objectives and achieved your ambitions. This card encourages you to embrace the sense of closure and success, recognizing that you have reached an important milestone.",
+      "card": {
+      "straight": {
+          "past": " The presence of The World in the past suggests that you have recently completed a significant cycle in your life. You have achieved significant milestones and completed important stages in your past. It may indicate that you have experienced a period of success and fulfillment in your previous endeavors.",
+          "present": "When The World appears in the present, it suggests that you are in a moment of celebration and contentment in your current life. You have achieved balance and are in harmony with your current circumstances. You are at a high point of achievement and success in the present.",
+          "future": "If this card appears in the future position, it indicates that you are on the path to culminate a major life phase or project. Success and fulfillment are in your future, and you are likely to reach significant goals. The World in the future position encourages you to look forward to a period of accomplishment and the realization of your ambitions."
+      },
+      "reverse": {
+          "past": "When The World is reversed in the past position, it suggests that there may have been past feelings of incompleteness or a sense of being stuck in a cycle without progression.",
+          "present": " In the present, The World reversed suggests feelings of incompleteness or a sense of being stuck in a cycle without progression. Focus on finding closure and moving forward.",
+          "future": "f it appears reversed in the future, you may face delays in achieving your goals and a sense of incompleteness. Continue working on your ambitions, and success will eventually come."
+      }
+      },
+      "image": "https://res.cloudinary.com/dtuski5bi/image/upload/v1698856557/tarbot/ejmvf4mgizucmdyc03rs.png",
+      "interpretation": "hola"
+  }
+]
