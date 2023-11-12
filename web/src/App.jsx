@@ -9,6 +9,7 @@ import InstructionsPage from "./pages/InstructionsPage"
 import SingleReadingPage from "./pages/SingleReadingPage"
 import MultiReadingPage from "./pages/MultireadingPage/MultiReadingPage"
 import MenuPage from './pages/MenuPage/MenuPage'
+import ReadingMenu from "./pages/ReadingMenu/ReadingMenu";
 
 
 
@@ -27,6 +28,7 @@ function App() {
         <Route path='/doSomething' element={<MenuPage />}/>//buttons
         <Route path='/profile' element={<ProfilePage/>}/>
         <Route path='/howItWorks' element={<InstructionsPage/>}/> //loremipsum
+        <Route path='/reading-type' element={<ReadingMenu/>}/>
         <Route path='/single-reading' element={<SingleReadingPage/>}/>
         <Route path='/multi-reading' element={<MultiReadingPage/>}/>
         <Route path='*' element={<Navigate to="/"/>}/>

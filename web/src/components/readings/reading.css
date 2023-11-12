@@ -1,13 +1,24 @@
 
-.reverse{
+.cards .reverse{
     transform: rotate(180deg);
     width: 120px;
     margin: 5px;
 }
 
-.straight{
+.cards .straight{
     transform: rotate(180deg);
     width: 120px;
+    margin: 5px;
+}
+
+.cards-reading .reverse{
+    transform: rotate(180deg);
+    width: 300px;
+    margin: 5px;
+}
+
+.cards-reading .straight{
+    width: 300px;
     margin: 5px;
 }
 
