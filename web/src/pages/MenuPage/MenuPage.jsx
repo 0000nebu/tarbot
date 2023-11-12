@@ -1,7 +1,7 @@
 import React from 'react'
-import profileImage from  '../assets/profile.png'
-import howImage from  '../assets/como-funciona.png'
-import readingImage from  '../assets/reading.png'
+import profileImage from  '../../assets/profile.png'
+import howImage from  '../../assets/como-funciona.png'
+import readingImage from  '../../assets/reading.png'
 import "./MenuPage.css"
 
 

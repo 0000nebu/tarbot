@@ -1,10 +1,17 @@
 import React from 'react'
+
+import UserProfile from '../components/profile/UserProfile'
 import ReadingsList from '../components/readings/ReadingsList'
 
 
 function ProfilePage() {
   return (
-    <ReadingsList/>
+    <>
+    <UserProfile/>
+    <div>
+    <ReadingsList />
+    </div>
+    </>
   )
 }
 

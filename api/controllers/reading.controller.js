@@ -3,6 +3,7 @@ const Card = require("../models/card.model")
 
 
 module.exports.create = async (req, res, next) => {
+
   try {
     const cards = await Card.find();
     let randomCards = cards;
@@ -20,6 +21,7 @@ module.exports.create = async (req, res, next) => {
       reading = {
         cards: {
           past: {
+            
             card: randomCards[0].id,
             reverse: Math.random() > 0.5
           },
@@ -47,6 +49,9 @@ module.exports.create = async (req, res, next) => {
     }
 
     const createdReading = await Reading.create({ ...reading, multi: req.body.multi });
+    await createdReading
+      .populate('cards.past.card cards.present.card cards.future.card')
+
     res.status(201).json(createdReading);
   } catch (error) {
     console.error(error);
@@ -61,6 +66,7 @@ module.exports.detail = (req, res, next) => {
 
   Reading.find({ user: req.user._id }) 
     .populate("user")
+    .populate('cards.past.card cards.present.card cards.future.card')
     .then((readings) => {
       usersInEvent = readings.map((reading) => {
         return reading.user;

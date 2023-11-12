@@ -9,3 +9,8 @@ export function create(data) {
     return service.post('/users', data)
 }
 
+export function userDetail(data) {
+    return service.get('/detail', {data})
+    
+}
+

@@ -10,7 +10,7 @@ const auth = require('../middlewares/auth.middleware');
 //USERS 
 router.post("/users", users.create);
 router.post("/login",users.login );
-//router.post('/profile', auth.isAuthenticated, users.detail)
+router.get('/detail', auth.isAuthenticated, users.detail)
 
 //CARD
 router.get("/cards", auth.isAuthenticated, cards.list); 

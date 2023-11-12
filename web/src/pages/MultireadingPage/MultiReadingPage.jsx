@@ -1,5 +1,5 @@
 import React from 'react'
-import MultiReading from '../components/readings/MultiReading'
+import MultiReading from '../../components/readings/MultiReading'
 
 
 function MultiReadingPage() {

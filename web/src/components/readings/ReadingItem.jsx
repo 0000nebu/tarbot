@@ -1,8 +1,6 @@
 import React from 'react'
 import { useState, useEffect} from 'react';
 
-
-
 function ReadingsList() {
     const  [data, setData] = useState([])
 

@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 
 module.exports.session = expressSession({
     secret: process.env.SESSION_SECRET ||  'supersecret',
-    proxy: process.env.SESSION_SECURE || 'false',
+    proxy: process.env.SESSION_SECURE === 'true',
     resave: false,
     saveUninitialized: false,    
     store: MongoStore.create({

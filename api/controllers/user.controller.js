@@ -22,8 +22,9 @@ module.exports.create = (req, res, next) => {
 
 
 module.exports.detail = (req, res, next) => {
-  { user: req.user }
+  res.json({ user: req.user });
 };
+
 
 
 

@@ -1,0 +1,35 @@
+
+.reverse{
+    transform: rotate(180deg);
+    width: 120px;
+    margin: 5px;
+}
+
+.straight{
+    transform: rotate(180deg);
+    width: 120px;
+    margin: 5px;
+}
+
+h3{
+    font-size: 15px;
+    color: #C9C7E3;
+    margin-left: 5px;
+}
+
+.reading-list{
+    display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 50px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 40px;
+  
+}
+
+.cards{
+    display: inline-block;
+}

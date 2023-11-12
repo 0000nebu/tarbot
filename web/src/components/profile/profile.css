@@ -1,0 +1,21 @@
+h1{
+    color: #C9C7E3;
+
+}
+
+.image-profile{
+    margin-top: 50px;
+    width:250px;
+    height:250px;
+    border-radius:150px;
+}
+
+.heading-profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+   
+
+
