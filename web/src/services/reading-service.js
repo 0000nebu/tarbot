@@ -1,5 +1,6 @@
 import service from './base-api'
 
+
 export function getReadings(data) {
     return service.get('/profile', { data });
 }
@@ -9,7 +10,7 @@ export function readingsDetail(id, data) {
 }
 
 export function multiReading(data) {
-    return service.get('/readings', { data });
+    return service.post('/readings', {multi: true}, data);
 }
 
 

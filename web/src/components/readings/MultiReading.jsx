@@ -11,12 +11,16 @@ function MultiReading() {
         multiReading()
         .then(data => {
           setData(data);
-        
+          console.log(data)
         })
     }, []);
 
   return (
-    <h3> {data?.cards}</h3>
+    <div>
+        <div className= 'cards'>
+    
+    </div>
+    </div>
   )
 }
 
