@@ -1,14 +1,14 @@
 import React from 'react'
 import { Link } from "react-router-dom";
+import SingleReading from '../../components/readings/Singlereading/singleReading'
+import '../MultireadingPage/ReadingPage.css'
 import candle from '../../assets/candle_2.gif'
 import candlee from '../../assets/candle_1.gif'
 import plant from '../../assets/planta.png'
-import './ReadingPage.css'
-import MultiReading from '../../components/readings/Multireading/MultiReading'
 
-
-function MultiReadingPage() {
+function SingleReadingPage() {
   return (
+    <section>
     <div className="table">
       <section className='table-elements'>
       <div className="candles">
@@ -18,17 +18,17 @@ function MultiReadingPage() {
       <img className="plant" src={plant} alt="plant-image" />
       </section>
       <div className="cardsOfReading">
-        <MultiReading/>
+        <SingleReading/>
       </div>
-      <div className="reading-button">
+      
+      <div className=" reading-button">
       <Link to="/profile">
       <button className="button">Profile</button>
       </Link>
       </div>
     </div>
-    
-  
+    </section>
   )
 }
 
-export default MultiReadingPage
+export default SingleReadingPage

@@ -2,7 +2,8 @@ import React from 'react'
 import { useForm } from 'react-hook-form';
 import { create } from '../services/user-service'
 import { useNavigate } from "react-router-dom"
-
+import signUpImage from '../assets/singup.png'
+import './LoginPage/LoginPage.css'
 
 
 
@@ -19,9 +20,10 @@ import { useNavigate } from "react-router-dom"
     }
 
     return (
-      <div>
+      <div className='login-body'>
+        <img className='login-image' src={signUpImage} alt="signUp-image" />
         <h1>Sign In</h1>
-        <form onSubmit={handleSubmit(handleSignIn)}>
+        <form  className='form' onSubmit={handleSubmit(handleSignIn)}>
           <div className="mb-3">
 
             <label htmlFor="name" className="form-label">
@@ -68,8 +70,8 @@ import { useNavigate } from "react-router-dom"
             />
           </div>
 
-          <button type="submit" className="btn btn-primary">
-            Login
+          <button type="submit" className="button">
+            Sign Up
           </button>
         </form>
 

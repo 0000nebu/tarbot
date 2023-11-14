@@ -1,0 +1,28 @@
+.login-body{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 300;
+    margin: auto;
+    padding-top: 150px;
+    text-align: center;
+    color: #C9C7E3;
+   
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.login-image{
+    width: 300px;
+}

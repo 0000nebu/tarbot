@@ -6,7 +6,7 @@
 }
 
 .cards .straight{
-    transform: rotate(180deg);
+   
     width: 120px;
     margin: 5px;
 }
@@ -43,4 +43,67 @@ h3{
 
 .cards{
     display: inline-block;
+}
+
+.cards-reading{
+    width: 30px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px;
+}
+
+.cardsOfReading{
+    display: flex;
+    justify-content: center;
+    margin-top: -200px;
+}
+
+
+.detail-cards .straight{
+   
+    width: 280px;
+    margin: 5px;
+}
+
+.detail-cards .reverse{
+    transform: rotate(180deg);
+    width: 280px;
+    margin: 20px;
+}
+
+.reading-detail-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: self-end;
+    
+}
+
+.detail-title{
+    color:#EC663F;
+}
+
+.detail-text{
+    width: 400px;
+    margin-left: 10px;
+    color: #C9C7E3;
+    
+}
+
+.form-card-detail{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.form-body-detail{
+    width: 1300px;
+    border-radius: 20px;
+    opacity: 0.1 ;
+    color:red;
+    margin: 20px;
 }

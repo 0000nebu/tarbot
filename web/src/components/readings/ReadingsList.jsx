@@ -11,8 +11,7 @@ function ReadingsList() {
     getReadings()
       .then(data => {
         setData(data.data);
-
-
+        console.log(data.data)
       })
   }, []);
 
@@ -25,21 +24,24 @@ function ReadingsList() {
   return (
     <section>
       <section className="reading-list">
-        {data.map((reading) => (
+        {data && data.map((reading) => (
+          
           <div className="reading-item" key={reading.id}>
+            <Link to={`/profile/${reading.id}`}>
             {reading.multi ?
             <div className= 'cards'>
-              <img className={reading.cards.past.reverse ? 'reverse' : 'straight'}  src={reading.cards.past.card.image} alt={reading.id} />
-              <img className={reading.cards.present.reverse ? 'reverse' : 'straight'} src={reading.cards.present.card.image} alt={reading.id} />
-              <img className={reading.cards.future.reverse ? 'reverse' : 'straight'} src={reading.cards.future.card.image} alt={reading.id} />
+              <img className={reading.cards.past?.reverse ? 'reverse' : 'straight'}  src={reading.cards.past.card.image} alt={reading.id} />
+              <img className={reading.cards.present?.reverse ? 'reverse' : 'straight'} src={reading.cards.present.card.image} alt={reading.id} />
+              <img className={reading.cards.future?.reverse ? 'reverse' : 'straight'} src={reading.cards.future.card.image} alt={reading.id} />
             </div>:
-            <div>
-             <img className={reading.cards.past.reverse ? 'reverse' : 'straight'}  src={reading.cards.past.card.image} alt={reading.id} />
+            <div className= 'cards'>
+             <img className={reading.cards.present?.reverse ? 'reverse' : 'straight'}  src={reading.cards.present.card.image} alt={reading.id} />
             </div>
             }         
-
+           </Link>
             <h3>
-              {reading.createdAt.toLocaleString("es-ES" ,
+              
+              {new Date(reading.createdAt).toLocaleString("es-ES" ,
 	              {day: "2-digit", month: "long", year: "numeric"})}
             </h3>
           </div>

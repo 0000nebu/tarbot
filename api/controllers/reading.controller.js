@@ -3,17 +3,10 @@ const Card = require("../models/card.model")
 
 
 module.exports.create = async (req, res, next) => {
-
   try {
     const cards = await Card.find();
-    let randomCards = cards;
-    const randomCompleteReadings = [];
-
-    for (let i = 0; i < 3; i++) {
-      const randomCard = randomCards[Math.floor(Math.random() * randomCards.length)];
-      randomCompleteReadings.push(randomCard);
-      randomCards = randomCards.filter(card => card.id.toString() !== randomCard.id.toString());
-    }
+    let randomCards = shuffle([...cards]); 
+    const randomCompleteReadings = randomCards.slice(0, 3);
 
     let reading;
 
@@ -21,47 +14,57 @@ module.exports.create = async (req, res, next) => {
       reading = {
         cards: {
           past: {
-            
-            card: randomCards[0].id,
-            reverse: Math.random() > 0.5
+            card: randomCompleteReadings[0].id,
+            reverse: Math.random() > 0.5,
           },
           present: {
-            card: randomCards[1].id,
-            reverse: Math.random() > 0.5
+            card: randomCompleteReadings[1].id,
+            reverse: Math.random() > 0.5,
           },
           future: {
-            card: randomCards[2].id,
-            reverse: Math.random() > 0.5
-          }
+            card: randomCompleteReadings[2].id,
+            reverse: Math.random() > 0.5,
+          },
         },
-        user: req.user._id 
+        user: req.user._id,
       };
     } else {
       reading = {
         cards: {
           present: {
-            card: randomCards[0].id,
-            reverse: Math.random() > 0.5
-          }
+            card: randomCompleteReadings[0].id,
+            reverse: Math.random() > 0.5,
+          },
         },
-        user: req.user._id 
+        user: req.user._id,
       };
+    }
+
+    function shuffle(array) {
+      let currentIndex = array.length, randomIndex;
+
+      while (currentIndex !== 0) {
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex--;
+
+        [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
+      }
+
+      return array;
     }
 
     const createdReading = await Reading.create({ ...reading, multi: req.body.multi });
     await createdReading
-      .populate('cards.past.card cards.present.card cards.future.card')
+    .populate('cards.past.card cards.present.card cards.future.card');
 
     res.status(201).json(createdReading);
   } catch (error) {
     console.error(error);
-    res.status(500).json({ message: 'Error interno del servidor' });
+    res.status(404).json({ message: 'Cards not found', error: error.message });
   }
 };
 
-
-
-module.exports.detail = (req, res, next) => {
+module.exports.list= (req, res, next) => {
   let usersInEvent = [];
 
   Reading.find({ user: req.user._id }) 
@@ -81,3 +84,33 @@ module.exports.detail = (req, res, next) => {
 }
 
 
+module.exports.detail = (req, res, next) => {
+ Reading.findById(req.params.id)
+ .populate('cards.past.card cards.present.card cards.future.card')
+    .then((reading) => {
+      if (reading) {
+        res.json(reading);
+      } else {
+        next(createError(404, "reading not found"));
+      }
+    })
+    .catch((error) => next(error));
+
+  }
+
+  module.exports.update = (req, res, next) => {
+
+    Reading.findByIdAndUpdate(req.params.id, req.body, {
+      runValidators: true,
+      new: true,
+    })
+      .then((reading) => {
+        if (reading) {
+          res.json(reading);
+        } else {
+          next(createError(404, "Task not found"));
+        }
+      })
+      .catch((error) => next(error));
+  };
+  

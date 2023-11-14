@@ -1,0 +1,80 @@
+
+.table-elements{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.candles{
+    width: 2rem;
+    margin-top: 30px;
+}
+
+.candle-1{
+    width: 300px;
+    margin-left: 160px;
+    margin-top: 40px;
+    background: transparent!important;
+   
+}
+
+
+.candle-2{
+    width: 300px;
+    margin-top: -100px;
+    background: transparent!important;
+   
+}
+
+.plant{
+    width: 600px;
+    
+}
+
+
+.cards-multi-reading-reading{
+    margin-top: -150px;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.reading-text{
+    color: #C9C7E3;
+    width: 900px;
+    position: absolute;
+    top: 300;
+    left: 0;
+    right: 0;
+    bottom: 300;
+    padding: 50px;
+    margin: auto;
+    text-align: center;
+}
+
+.table{
+    display: flex;
+   
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+.reading-button{
+   width: 1700px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 270px;
+   margin-left: 150px;
+}
+
+.cards-reading{
+    background: transparent!important;
+}
+
+.bug{
+    background: transparent!important;
+}

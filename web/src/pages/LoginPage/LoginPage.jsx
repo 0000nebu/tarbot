@@ -1,9 +1,11 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import { login } from '../services/user-service';
+import { login } from '../../services/user-service';
 import { useNavigate } from 'react-router-dom';
-import { useAuthContext } from '../contexts/user-context';
+import { useAuthContext } from '../../contexts/user-context';
 import { Navigate } from 'react-router-dom';
+import loginImage from '../../assets/login.png'
+import './LoginPage.css'
 
 function LoginPage() {
   const { register, handleSubmit } = useForm();
@@ -16,14 +18,14 @@ function LoginPage() {
   } //navigate
 
   if (user) {
-    return <Navigate to="/" />;
+    return <Navigate to="/doSomething" />;
   }
 
   return (
-    <div>
-      <h1>Login</h1>
-
-      <form onSubmit={handleSubmit(handleLogin)}>
+    <div className='login-body'>
+      <img className='login-image' src={loginImage} alt="login-image" />
+      <h1>Login</h1> 
+      <form className='form' onSubmit={handleSubmit(handleLogin)}>
         <div className="mb-3">
           <label htmlFor="email" className="form-label">
             Email address
@@ -49,7 +51,7 @@ function LoginPage() {
           />
         </div>
 
-        <button type="submit" className="btn btn-primary">
+        <button type="submit" className="button">
           Login
         </button>
       </form>

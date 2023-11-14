@@ -7,10 +7,13 @@ import ReadingsList from '../components/readings/ReadingsList'
 function ProfilePage() {
   return (
     <>
-    
     <div>
-    <ReadingsList />
+      <UserProfile />
     </div>
+    <div>
+      <ReadingsList />
+    </div>
+    
     </>
   )
 }

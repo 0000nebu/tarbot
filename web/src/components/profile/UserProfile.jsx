@@ -3,27 +3,31 @@ import { useState, useEffect} from 'react';
 import {userDetail} from "../../services/user-service"
 import "./profile.css"
 
-
-    
+  
 function UserProfile() {
-    const  [data, setData] = useState([])
+    const  [data, setData] = useState(null)
 
     useEffect(() => {
         userDetail()
         .then(data => {
-          setData(data);
-          console.log(data.data.user.avatar)
+          setData(data.data.user);
         })
     }, []);
 
     if (!data) {
         return <div>Loading...</div>
       }
-
+      
+      //siempre que se cargue data que se renderice lo que está dentro de los paréntesis (data && ())
   return (
     <div className='heading-profile'>
-           <img className='image-profile' src={data?.data.user.avatar} alt={data?.data.user.id} />
-        <h1>{data?.data.user.username}</h1>   
+    
+      {data && (
+        <div>
+         <img className='image-profile' src={data?.avatar} alt={data?.id} />
+         <h1>{data?.username}</h1>   
+         </div>
+      )}
   </div>
   )
 }
