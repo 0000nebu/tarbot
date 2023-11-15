@@ -9,6 +9,7 @@ import '../reading.css'
 function SingleReading() {
   
     const  [data, setData] = useState(null)
+    const [autoFlip, setAutoFlip] = useState(false);
 
     useEffect(() => {
         singleReading()
@@ -17,7 +18,13 @@ function SingleReading() {
          
         })
     }, []);
-
+    
+    useEffect(() => {
+      const autoFlipTimeout = setTimeout(() => {
+        setAutoFlip(true);
+      }, 2000);
+      return () => clearTimeout(autoFlipTimeout);
+    }, []);
     console.log(data)
 
   return (
@@ -25,7 +32,10 @@ function SingleReading() {
         {data && (
         <div className='bug'>
         <section className= 'cards-reading'>
-          <img className={data?.present.reverse ? 'reverse' : 'straight'} src={data?.present.card.image} alt="image-past" />  
+        <div className={`card ${autoFlip ? 'flipped' : ''}`}>
+              <img className="card-back" src="https://res.cloudinary.com/dtuski5bi/image/upload/v1698856556/tarbot/wblpxa9qzdi7edshzv3x.png" alt="back-image" />
+              <img className={`card-front ${data.present?.reverse  ? 'reverse' : 'straight'}`} src={data.present?.card.image} alt="image-past" />
+            </div>
     </section>
         <div className= "reading-text">
         <p>{data?.present.card.description}</p>

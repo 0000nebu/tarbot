@@ -1,109 +1,143 @@
-
-.cards .reverse{
+.cards .reverse {
     transform: rotate(180deg);
     width: 120px;
     margin: 5px;
 }
 
-.cards .straight{
-   
+.cards .straight {
     width: 120px;
     margin: 5px;
 }
 
-.cards-reading .reverse{
-    transform: rotate(180deg);
+.cards-reading .reverse {
+    transform: rotateX(180deg);
     width: 300px;
     margin: 5px;
 }
 
-.cards-reading .straight{
+.cards-reading .straight {
     width: 300px;
     margin: 5px;
 }
 
-h3{
+h3 {
     font-size: 15px;
     color: #C9C7E3;
     margin-left: 5px;
 }
 
-.reading-list{
+.reading-list {
     display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 50px;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 40px;
-  
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 40px;
 }
 
-.cards{
+.cards {
     display: inline-block;
 }
 
-.cards-reading{
+.cards-reading {
     width: 30px;
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: center;
     padding: 5px;
 }
 
-.cardsOfReading{
+.cardsOfReading {
     display: flex;
     justify-content: center;
     margin-top: -200px;
 }
 
-
-.detail-cards .straight{
-   
+.detail-cards .straight {
     width: 280px;
     margin: 5px;
 }
 
-.detail-cards .reverse{
+.detail-cards .reverse {
     transform: rotate(180deg);
     width: 280px;
     margin: 20px;
 }
 
-.reading-detail-items{
+.reading-detail-items {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: self-end;
-    
 }
 
-.detail-title{
-    color:#EC663F;
+.detail-title {
+    color: #EC663F;
 }
 
-.detail-text{
+.detail-text {
     width: 400px;
     margin-left: 10px;
     color: #C9C7E3;
-    
 }
 
-.form-card-detail{
-    
+.form-card-detail {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   
 }
 
-.form-body-detail{
-    width: 1300px;
+.form-body-detail {
+    width: 1250px;
     border-radius: 20px;
-    opacity: 0.1 ;
-    color:red;
-    margin: 20px;
+    opacity: 0.2;
+    color: red;
 }
+
+.card {
+    background: transparent !important;
+    width: 200px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.cards-reading {
+    
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 250px;
+}
+
+.card-front {
+    position: absolute;
+    transform: rotateY(180deg);
+}
+
+.cards-reading {
+    perspective: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 80px;
+}
+
+.card.flipped {
+    transform: rotateY(180deg);
+}
+
+.card-back,
+.card-front {
+    width: 300px;
+    position: absolute;
+    backface-visibility: hidden;
+}
+

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from "react-router-dom";
 import { readingsDetail } from '../../services/reading-service';
 import './reading.css'
-const { register, handleSubmit } = useForm();
+
 
 function ReadingItem() {
   const params = useParams();
