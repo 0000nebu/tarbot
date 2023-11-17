@@ -141,3 +141,51 @@ h3 {
     backface-visibility: hidden;
 }
 
+.cards-reading-single{
+    display: flex;
+    justify-self: center;
+    margin-left: 75px;
+    height: 550px;
+}
+
+
+
+ .transparent{ 
+    opacity: 0.0;
+}
+
+ .start{ 
+    animation: fadeIn 2s ease-out forwards;
+    animation-delay: 0.5s;
+       
+     }
+
+
+     @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      .sun-move{
+        background: transparent!important;
+        width: 500px;
+      }
+
+      .conecting{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        
+      }
+
+      .conecting p{
+        
+        color: #C9C7E3;
+        background: transparent!important;
+        margin: 0!important;
+      }

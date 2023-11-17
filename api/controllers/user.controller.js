@@ -90,4 +90,7 @@ module.exports.detail = (req, res, next) => {
   })
   .catch((error) => next(error))
 };*/
- //LOGOUT
+module.exports.logout = (req, res, next) => {
+  req.session.destroy();
+  res.status(204).send();
+};

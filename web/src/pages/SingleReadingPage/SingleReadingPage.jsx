@@ -21,11 +21,7 @@ function SingleReadingPage() {
         <SingleReading/>
       </div>
       
-      <div className=" reading-button">
-      <Link to="/profile">
-      <button className="button">Profile</button>
-      </Link>
-      </div>
+      
     </div>
     </section>
   )

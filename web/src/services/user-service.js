@@ -14,3 +14,8 @@ export function userDetail(data) {
     
 }
 
+export function logoutApi() {
+    return service.post("/logout");
+  }
+  
+  

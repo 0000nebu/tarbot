@@ -5,6 +5,7 @@ import candlee from '../../assets/candle_1.gif'
 import plant from '../../assets/planta.png'
 import './ReadingPage.css'
 import MultiReading from '../../components/readings/Multireading/MultiReading'
+import PreReading from '../../components/readings/PreReading';
 
 
 function MultiReadingPage() {
@@ -18,13 +19,9 @@ function MultiReadingPage() {
       <img className="plant" src={plant} alt="plant-image" />
       </section>
       <div className="cardsOfReading">
-        <MultiReading/>
+        <PreReading/>
       </div>
-      <div className="reading-button">
-      <Link to="/profile">
-      <button className="button">Profile</button>
-      </Link>
-      </div>
+      
     </div>
     
   

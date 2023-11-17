@@ -1,6 +1,22 @@
 h1{
     color: #C9C7E3;
+    font-weight: 700;
 
+}
+
+.heading-profile{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-profile {
+    display: flex important!;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* justify-items: center; */
+    align-items: center;
 }
 
 .image-profile{

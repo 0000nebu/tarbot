@@ -11,6 +11,7 @@ import MultiReadingPage from "./pages/MultireadingPage/MultiReadingPage"
 import MenuPage from './pages/MenuPage/MenuPage'
 import ReadingMenu from "./pages/ReadingMenu/ReadingMenu";
 import ReadingDetail from "./pages/ReadingDetail";
+import NavBar from "./components/NavBar/Navbar";
 
 
 
@@ -21,6 +22,7 @@ function App() {
   return (
     <div className="App">
       
+      <NavBar />
 
       <Routes> 
         <Route path='/' element={<HomePage/>}/>//loremipsum+button

@@ -10,7 +10,7 @@ function ReadingMenu() {
     <Link to='/multi-reading'>
       <img className="profileImage" src={MultiReadingCard} alt="profile-image" />
       </Link>
-      <Link to='/simple-reading'>
+      <Link to='/single-reading'>
       <img className="readingleImage" src={SimpleReadingCard} alt="readig-image" />
       </Link>
     </span>

@@ -19,7 +19,7 @@ function ReadingItem() {
   }, [params.id]);
 
  
- ////updateReading(1, {coment:bunas noches})
+ //faltaria el formulario para enviar la info al body. 
 
   return (
     <section>
@@ -61,7 +61,7 @@ function ReadingItem() {
       <h3>How do you feel?</h3>
       <p>{data.coment}</p>
       <div>
-    <textarea className="form-body-detail" id="exampleFormControlTextarea1" rows="3"></textarea>
+   
   </div>
   <button type="submit" className="button">
           Add vibes
