@@ -1,5 +1,6 @@
 const Reading = require('../models/reading.model');
 const Card = require("../models/card.model")
+const axios = require('axios')
 
 
 module.exports.create = async (req, res, next) => {
@@ -74,7 +75,7 @@ module.exports.list= (req, res, next) => {
       usersInEvent = readings.map((reading) => {
         return reading.user;
       });
-      console.log(usersInEvent);
+  
       res.json(readings);
     })
     .catch((err) => {
@@ -98,19 +99,121 @@ module.exports.detail = (req, res, next) => {
 
   }
 
-  module.exports.update = (req, res, next) => {
-
-    Reading.findByIdAndUpdate(req.params.id, req.body, {
-      runValidators: true,
-      new: true,
-    })
-      .then((reading) => {
+  module.exports.adviceLove = (req, res, next) => {
+    Reading.findById(req.params.id)
+    .populate('cards.past.card cards.present.card cards.future.card')
+      .then(reading => {
+        console.log
+        const cardsKeys = Object.keys(reading.cards);
+        const response = cardsKeys.map(key => `${reading.cards[key].card.name} ${reading.cards[key].reverse ? 'reversed' : ''}`).join(' & ')
+        const responsePresetnt =  `${reading.cards.present.card.name} ${reading.cards.present.reverse ? 'reversed' : ''}`;
         if (reading) {
-          res.json(reading);
-        } else {
-          next(createError(404, "Task not found"));
+          axios.post('https://api.openai.com/v1/chat/completions',
+            {
+              "model": "gpt-3.5-turbo-1106",
+              "messages": [
+                {
+                  "role": "system",
+                  "content": "You're a fortune teller, give me advice summarizing this 3-card tarot spread, 1 phrase"
+                },
+                {
+                  "role": "user",
+                  "content": `${reading.multi ? response : responsePresetnt}`
+                }
+              ],
+              "temperature": 0.7,
+              "max_tokens": 40
+            },
+            {
+              headers: {
+                "Content-Type": "application/json",
+                Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
+              }
+            },
+          )
+          .then(advice => {
+            Reading.findByIdAndUpdate(req.params.id, { advice: advice.data.choices[0].message.content }, {
+              runValidators: true,
+              new: true,
+            })
+            .then(updatedReading => {
+              if (updatedReading) {
+                res.json(updatedReading);
+              } else {
+                next(createError(404, "Reading not found"));
+              }
+            })
+            .catch(error => next(error));
+          })
+          .catch(error => next(error));
         }
       })
-      .catch((error) => next(error));
-  };
-  
+        .catch(error => next(error));
+    }
+
+ 
+      module.exports.adviceEmoji = (req, res, next) => {
+        Reading.findById(req.params.id)
+        .populate('cards.past.card cards.present.card cards.future.card')
+          .then(reading => {
+            if (reading) {
+              axios.post('https://api.openai.com/v1/chat/completions',
+                {
+                  "model": "gpt-3.5-turbo-1106",
+                  "messages": [
+                    {
+                      "role": "system",
+                      "content": "Translate the meanings of 3 tarot cards into 1 emoji"
+                    },
+                    {
+                      "role": "user",
+                    "content": `${reading.cards} ?  ${reading.cards.past.card.name} ${reading.cards.past.reverse ? 'reversed' : ''} & ${reading.cards.present.card.name} ${reading.cards.present.reverse ? 'reversed' : ''} & ${reading.cards.future.card.name} ${reading.cards.future.reverse ? 'reversed' : ''}
+                    : ${reading.cards.present.card.name} ${reading.cards.present.reverse ? 'reversed' : ''}`
+                    }
+                  ],
+                  "temperature": 0.7,
+                  "max_tokens": 3
+
+                },
+                {
+                  headers: {
+                    "Content-Type": "application/json",
+                    Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
+                  }
+                },
+              )
+              .then(advice => {
+                Reading.findByIdAndUpdate(req.params.id, { advice: advice.data.choices[0].message.content }, {
+                  runValidators: true,
+                  new: true,
+                })
+                .then(updatedReading => {
+                  if (updatedReading) {
+                    res.json(updatedReading);
+                  } else {
+                    next(createError(404, "Reading not found"));
+                  }
+                })
+                .catch(error => next(error));
+              })
+              .catch(error => next(error));
+            }
+          })
+            .catch(error => next(error));
+        }
+    
+      module.exports.update = (req, res, next) => {
+    
+        Reading.findByIdAndUpdate(req.params.id, req.body, {
+          runValidators: true,
+          new: true,
+        })
+          .then((reading) => {
+            if (reading) {
+              res.json(reading);
+            } else {
+              next(createError(404, "Task not found"));
+            }
+          })
+          .catch((error) => next(error));
+        }

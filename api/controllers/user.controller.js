@@ -41,7 +41,6 @@ module.exports.detail = (req, res, next) => {
 }; */
 
  module.exports.login = (req, res, next) => {
-  console.log(req.body)
   User.findOne({ mail: req.body.mail })
     .then((user) => {
       if (user) {

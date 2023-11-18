@@ -68,6 +68,7 @@ h3 {
 }
 
 .reading-detail-items {
+    margin-top: 300px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -79,7 +80,7 @@ h3 {
 }
 
 .detail-text {
-    width: 400px;
+    width: 550px;
     margin-left: 10px;
     color: #C9C7E3;
 }
@@ -180,6 +181,8 @@ h3 {
         flex-direction: column;
         justify-items: center;
         align-items: center;
+        height: 1200px;
+        margin-top:200px
         
       }
 
@@ -188,4 +191,44 @@ h3 {
         color: #C9C7E3;
         background: transparent!important;
         margin: 0!important;
+        animation: fadeIn 2s ease-out forwards;
+        
+      }
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      .advice{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+
+      }
+
+      .reading-buttons{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 300px;
+      }
+
+      .advice h3{
+        font-size: 120%;
+        font-weight: 700;
+      }
+
+      .advice p{
+        color: #C9C7E3;
+      }
+      .detail-text p {
+        font-size: 100%;
       }

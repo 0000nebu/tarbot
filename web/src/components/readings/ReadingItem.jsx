@@ -1,12 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from "react-router-dom";
 import { readingsDetail } from '../../services/reading-service';
+import { updateAdviceLove } from '../../services/reading-service';
+import { updateAdviceEmoji } from '../../services/reading-service';
 import './reading.css'
 
 
 function ReadingItem() {
   const params = useParams();
   const [data, setData] = useState([]);
+  const [readingData, setReadingData] = useState([]);
+  const [showAdviceLove, setShowAdviceLove] = useState(false);
+  const [showAdviceEmoji, setShowAdviceEmoji] = useState(false);
 
   useEffect(() => {
     readingsDetail(params.id)
@@ -17,9 +22,41 @@ function ReadingItem() {
         console.error("Error fetching data:", error);
       });
   }, [params.id]);
+  console.log(data)
 
- 
- //faltaria el formulario para enviar la info al body. 
+
+  useEffect(() => {
+    if (showAdviceLove) {
+      updateAdviceLove(params.id)
+        .then(readingData => {
+          setReadingData(readingData);
+        })
+        .catch(error => {
+          console.error("Error fetching data:", error);
+        });
+    } else if (showAdviceEmoji)
+      updateAdviceEmoji(params.id)
+        .then(readingData => {
+          setReadingData(readingData);
+        })
+        .catch(error => {
+          console.error("Error fetching data:", error);
+        });
+  }
+    , [params.id, showAdviceLove, showAdviceEmoji]);
+
+  console.log(readingData)
+
+  const handleShowAdviceLove = () => {
+    setShowAdviceLove(true);
+  }
+
+  const handleshowAdviceEmoji = () => {
+    setShowAdviceEmoji(true);
+  }
+
+
+  //faltaria el formulario para enviar la info al body. 
 
   return (
     <section>
@@ -37,7 +74,7 @@ function ReadingItem() {
               </div>
             }
 
-            <div classname='detail-text-items'>
+            <div className='detail-text-items'>
               {data.multi ?
                 <div className='detail-text'>
                   <h2 className='detail-title' >{data.cards.past?.card?.name}-{data.cards.present?.card?.name}-{data.cards.future?.card?.name}</h2>
@@ -54,19 +91,22 @@ function ReadingItem() {
             </div>
           </div>
         }
-      
-      
+
+
       </section>
-      <form className="form-card-detail">
-      <h3>How do you feel?</h3>
-      <p>{data.coment}</p>
-      <div>
-   
-  </div>
-  <button type="submit" className="button">
-          Add vibes
-        </button>
-</form>
+
+      <div className='advice'>
+      <h3>do you need any advice?</h3>
+        <div className='advice-buttons'> 
+      <button onClick={handleShowAdviceLove} className="button">
+        about love
+      </button>
+      <button onClick={handleshowAdviceEmoji} className="button">
+        about work
+      </button>
+      </div>
+      <p>{readingData.data?.advice}</p>
+      </div>
     </section>
   );
 }

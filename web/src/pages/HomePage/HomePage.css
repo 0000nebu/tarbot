@@ -15,7 +15,7 @@ body {
     right: 0;
     bottom: 200;
     margin: auto;
-    height: 600px;
+    height: 800px;
 }
 
 .title {
@@ -28,7 +28,7 @@ body {
     right: 0;
     bottom: 300;
     margin: auto;
-    padding-top: 260px;
+    padding-top: 360px;
     box-shadow: 20px;
     size: 20%;
 
@@ -38,35 +38,39 @@ body {
     color: #C9C7E3;
     width: 600px;
     position: absolute;
-    top: 300;
+    top: 65;
     left: 0;
     right: 0;
     bottom: 300;
     margin: auto;
-    padding-top: 700px;
+    padding-top: 100px;
     text-align: center;
 
+}
+
+.cabecera{
+  height: 500px;
 }
 
 .items{
     display: flex;
     position: absolute;
- 
-  flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .wrap {
-    height: 100%;
+    padding-top: 55px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 300;
+    top: 100;
     left: 0;
     right: 0;
     bottom: 300;
     margin: auto;
-    padding-top: 900px;
     text-align: center;
 
   }
@@ -99,3 +103,35 @@ body {
     transform: translateY(-7px);
   }
 
+.text-image{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 300px;
+}
+.text-image img{
+    width:300px;
+    gap: 200px;
+    margin-top: -200px;
+  }
+
+
+
+.flores{
+  margin-top: 600px;
+}
+
+
+
+p{
+  font-size: 120%;
+}
+
+.star{
+  padding-left: 500px;
+}
+
+.star-2{
+  padding-left: 1100px;
+  padding-top: 400px;
+}

@@ -16,10 +16,13 @@ export function singleReading(data) {
     return service.post('/readings', data);
 }
 
-export function updateReading( id, data) {
-    return service.patch(`/readings/${id}`, data);
+export function updateAdviceLove( id, data) {
+    return service.post(`/readings/${id}/adviceLove`, data);
 }
 
+export function updateAdviceEmoji( id, data) {
+    return service.post(`/readings/${id}/adviceEmoji`, data);
+}
 
 
 

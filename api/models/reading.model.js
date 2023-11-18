@@ -37,7 +37,7 @@ const readingSchema = new Schema(
             }
         },
 
-        coment: {
+        advice: {
             type: String
         }
 
