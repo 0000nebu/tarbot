@@ -11,12 +11,17 @@ h1{
     align-items: center;
 }
 
-.user-profile {
-    display: flex important!;
-    flex-direction: column;
-    /* justify-content: center; */
-    /* justify-items: center; */
-    align-items: center;
+.prueba-prueba{
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.username{
+    margin-left: 20px;
+    margin-top: 20px;
+    
 }
 
 .image-profile{

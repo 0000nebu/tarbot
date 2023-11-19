@@ -2,11 +2,13 @@
 import { useAuthContext } from "../../contexts/user-context";
 import { logoutApi } from "../../services/user-service";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import name from "../../assets/name.png"
 import './Navbar.css'
 
 function NavBar() {
   const { user, onLogout } = useAuthContext();
+  const navigate = useNavigate()
 
   function logout() {
     logoutApi().then(() => {
@@ -34,6 +36,7 @@ function NavBar() {
                 
               />
             )}
+            <Link to='/' >
             <button
               onClick={logout}
               className="button logout"
@@ -41,6 +44,7 @@ function NavBar() {
               
               logout
             </button>
+            </Link>
           </div>
         
       </div>

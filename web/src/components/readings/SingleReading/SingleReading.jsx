@@ -26,7 +26,7 @@ function SingleReading() {
     }, 2000);
     return () => clearTimeout(autoFlipTimeout);
   }, []);
-  console.log(data)
+
 
   return (
     <div>

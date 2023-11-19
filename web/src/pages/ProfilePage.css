@@ -1,0 +1,15 @@
+.header-profile{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.star-profile-1{
+    margin-top: 300px
+}
+
+
+

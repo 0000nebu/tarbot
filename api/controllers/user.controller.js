@@ -46,7 +46,7 @@ module.exports.detail = (req, res, next) => {
       if (user) {
         return user.checkPassword(req.body.password).then((match) => {
           if (match) {
-            console.log("passwormatch")
+            
             req.session.userId = user.id;
             res.json(user);
           } else {

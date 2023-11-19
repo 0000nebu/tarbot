@@ -103,10 +103,10 @@ module.exports.detail = (req, res, next) => {
     Reading.findById(req.params.id)
     .populate('cards.past.card cards.present.card cards.future.card')
       .then(reading => {
-        console.log
+        console.log( `${reading.cards.present?.card.name} ${reading.cards.present?.reverse ? 'reversed' : ''}`)
         const cardsKeys = Object.keys(reading.cards);
-        const response = cardsKeys.map(key => `${reading.cards[key].card.name} ${reading.cards[key].reverse ? 'reversed' : ''}`).join(' & ')
-        const responsePresetnt =  `${reading.cards.present.card.name} ${reading.cards.present.reverse ? 'reversed' : ''}`;
+        const response = cardsKeys.map(key => `${reading.cards[key].card?.name} ${reading.cards[key].reverse ? 'reversed' : ''}`).join(' & ')
+        const responsePresent =  `${reading.cards.present.card.name} ${reading.cards.present.reverse ? 'reversed' : ''}`;
         if (reading) {
           axios.post('https://api.openai.com/v1/chat/completions',
             {
@@ -118,7 +118,7 @@ module.exports.detail = (req, res, next) => {
                 },
                 {
                   "role": "user",
-                  "content": `${reading.multi ? response : responsePresetnt}`
+                  "content": `${reading.multi ? response : responsePresent}`
                 }
               ],
               "temperature": 0.7,

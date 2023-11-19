@@ -1,13 +1,53 @@
 .text-instrusctions{
     color: #C9C7E3;
-    width: 600px;
-    position: absolute;
-    top: 50;
-    left: 0;
-    right: 0;
-    bottom: 50;
-    margin: auto;
-    padding-top: 60px;
+   display: flex;
+   flex-direction: column;
     text-align: center;
+    align-items: center;
 
+}
+
+.text-instrusctions >p{
+    margin-top: 50px;
+    width: 900px;
+}
+
+.cards-past-present-future{
+    display: flex;
+    flex-direction: row;
+    gap: 210px;
+    justify-content: center;
+}
+
+.cards-past-present-future img{
+    width: 300px;
+    margin-top: 50px;
+
+}
+
+.text-past-present-future{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    width: 2000px;
+}
+
+.text-past-present-future p{
+    width: 500px;
+}
+
+.guidecard-explanation img{
+    width: 300px;
+}
+
+.guidecard-explanation{
+    width: 500px;
+    margin-top: 50px;
+    
+}
+.guidecard-explanation p{
+    padding-top: 30px;
 }

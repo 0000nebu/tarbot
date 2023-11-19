@@ -5,6 +5,7 @@
 .tarbot-logo{
     width: 200px;
     margin: 20px;
+    box-shadow: black 100%;
 }
 
 .navbar {

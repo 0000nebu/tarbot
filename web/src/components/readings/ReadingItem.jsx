@@ -22,7 +22,7 @@ function ReadingItem() {
         console.error("Error fetching data:", error);
       });
   }, [params.id]);
-  console.log(data)
+ 
 
 
   useEffect(() => {
@@ -45,7 +45,7 @@ function ReadingItem() {
   }
     , [params.id, showAdviceLove, showAdviceEmoji]);
 
-  console.log(readingData)
+
 
   const handleShowAdviceLove = () => {
     setShowAdviceLove(true);

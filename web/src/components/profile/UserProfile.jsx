@@ -23,9 +23,9 @@ function UserProfile() {
     <div className='heading-profile'>
     
       {data && (
-        <div classNAme='user-profile'>
+        <div className='prueba-prueba'>
          <img className='image-profile' src={data?.avatar} alt={data?.id} />
-         <h1>{data?.username}</h1>   
+         <h1 className ='username'>{data?.username}</h1>   
          </div>
       )}
   </div>

@@ -28,7 +28,7 @@ function MultiReading() {
   }, []);
 
 
-  console.log(data)
+ 
 
   return (
     <div>
