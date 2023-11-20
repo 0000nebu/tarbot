@@ -114,14 +114,14 @@ module.exports.detail = (req, res, next) => {
               "messages": [
                 {
                   "role": "system",
-                  "content": "You're a fortune teller, give me advice summarizing this 3-card tarot spread, 1 phrase"
+                  "content": "You're a fortune teller, give me advice summarizing this 3-card tarot spread about love, 1 phrase"
                 },
                 {
                   "role": "user",
                   "content": `${reading.multi ? response : responsePresent}`
                 }
               ],
-              "temperature": 0.7,
+              "temperature": 1.0,
               "max_tokens": 40
             },
             {
@@ -152,36 +152,38 @@ module.exports.detail = (req, res, next) => {
     }
 
  
-      module.exports.adviceEmoji = (req, res, next) => {
+      module.exports.adviceWork = (req, res, next) => {
         Reading.findById(req.params.id)
         .populate('cards.past.card cards.present.card cards.future.card')
-          .then(reading => {
-            if (reading) {
-              axios.post('https://api.openai.com/v1/chat/completions',
-                {
-                  "model": "gpt-3.5-turbo-1106",
-                  "messages": [
-                    {
-                      "role": "system",
-                      "content": "Translate the meanings of 3 tarot cards into 1 emoji"
-                    },
-                    {
-                      "role": "user",
-                    "content": `${reading.cards} ?  ${reading.cards.past.card.name} ${reading.cards.past.reverse ? 'reversed' : ''} & ${reading.cards.present.card.name} ${reading.cards.present.reverse ? 'reversed' : ''} & ${reading.cards.future.card.name} ${reading.cards.future.reverse ? 'reversed' : ''}
-                    : ${reading.cards.present.card.name} ${reading.cards.present.reverse ? 'reversed' : ''}`
-                    }
-                  ],
-                  "temperature": 0.7,
-                  "max_tokens": 3
-
-                },
-                {
-                  headers: {
-                    "Content-Type": "application/json",
-                    Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
+        .then(reading => {
+          console.log( `${reading.cards.present?.card.name} ${reading.cards.present?.reverse ? 'reversed' : ''}`)
+          const cardsKeys = Object.keys(reading.cards);
+          const response = cardsKeys.map(key => `${reading.cards[key].card?.name} ${reading.cards[key].reverse ? 'reversed' : ''}`).join(' & ')
+          const responsePresent =  `${reading.cards.present.card.name} ${reading.cards.present.reverse ? 'reversed' : ''}`;
+          if (reading) {
+            axios.post('https://api.openai.com/v1/chat/completions',
+              {
+                "model": "gpt-3.5-turbo-1106",
+                "messages": [
+                  {
+                    "role": "system",
+                    "content": "You're a fortune teller, give me advice summarizing this 3-card tarot spread about work, 1 phrase"
+                  },
+                  {
+                    "role": "user",
+                    "content": `${reading.multi ? response : responsePresent}`
                   }
-                },
-              )
+                ],
+                "temperature": 0.7,
+                "max_tokens": 40
+              },
+              {
+                headers: {
+                  "Content-Type": "application/json",
+                  Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
+                }
+              },
+            )
               .then(advice => {
                 Reading.findByIdAndUpdate(req.params.id, { advice: advice.data.choices[0].message.content }, {
                   runValidators: true,

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
-import SingleReading from '../../components/readings/Singlereading/singleReading'
+import SingleReading from '../../components/readings/SingleReading/SingleReading';
 import PreReading from '../../components/readings/PreReading'
 import '../MultireadingPage/ReadingPage.css'
 import candle from '../../assets/candle_2.gif'

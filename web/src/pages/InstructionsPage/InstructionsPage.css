@@ -1,4 +1,5 @@
 .text-instrusctions{
+    margin-top: 100px;
     color: #C9C7E3;
    display: flex;
    flex-direction: column;
@@ -24,6 +25,8 @@
     margin-top: 50px;
 
 }
+
+
 
 .text-past-present-future{
     padding-top: 30px;

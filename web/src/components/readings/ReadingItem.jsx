@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from "react-router-dom";
 import { readingsDetail } from '../../services/reading-service';
 import { updateAdviceLove } from '../../services/reading-service';
-import { updateAdviceEmoji } from '../../services/reading-service';
+import { updateAdviceWork } from '../../services/reading-service';
 import './reading.css'
 
 
@@ -11,7 +11,7 @@ function ReadingItem() {
   const [data, setData] = useState([]);
   const [readingData, setReadingData] = useState([]);
   const [showAdviceLove, setShowAdviceLove] = useState(false);
-  const [showAdviceEmoji, setShowAdviceEmoji] = useState(false);
+  const [showAdviceWork, setShowAdviceWork] = useState(false);
 
   useEffect(() => {
     readingsDetail(params.id)
@@ -34,8 +34,8 @@ function ReadingItem() {
         .catch(error => {
           console.error("Error fetching data:", error);
         });
-    } else if (showAdviceEmoji)
-      updateAdviceEmoji(params.id)
+    } else if (showAdviceWork)
+      updateAdviceWork(params.id)
         .then(readingData => {
           setReadingData(readingData);
         })
@@ -43,7 +43,7 @@ function ReadingItem() {
           console.error("Error fetching data:", error);
         });
   }
-    , [params.id, showAdviceLove, showAdviceEmoji]);
+    , [params.id, showAdviceLove, showAdviceWork]);
 
 
 
@@ -51,8 +51,8 @@ function ReadingItem() {
     setShowAdviceLove(true);
   }
 
-  const handleshowAdviceEmoji = () => {
-    setShowAdviceEmoji(true);
+  const handleshowAdviceWork = () => {
+    setShowAdviceWork(true);
   }
 
 
@@ -101,7 +101,7 @@ function ReadingItem() {
       <button onClick={handleShowAdviceLove} className="button">
         about love
       </button>
-      <button onClick={handleshowAdviceEmoji} className="button">
+      <button onClick={handleshowAdviceWork} className="button">
         about work
       </button>
       </div>

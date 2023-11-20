@@ -135,3 +135,6 @@ p{
   padding-left: 1100px;
   padding-top: 400px;
 }
+
+.up 
+  { animation: fadeIn 5s; }

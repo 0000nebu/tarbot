@@ -23,7 +23,7 @@ router.post("/cards", cards.create)
 router.post("/readings", auth.isAuthenticated, readings.create);
 router.get("/readings/:id", auth.isAuthenticated, readings.detail);
 router.post('/readings/:id/adviceLove', auth.isAuthenticated, readings.adviceLove)
-router.post('/readings/:id/adviceEmoji', auth.isAuthenticated, readings.adviceEmoji)
+router.post('/readings/:id/adviceWork', auth.isAuthenticated, readings.adviceWork)
 router.get('/profile', auth.isAuthenticated, readings.list)
 
 

@@ -29,7 +29,7 @@ function SingleReading() {
 
 
   return (
-    <div>
+    <div className='main-reading'>
       {data && (
         <div className='bug'>
           <section className='cards-reading-single'>

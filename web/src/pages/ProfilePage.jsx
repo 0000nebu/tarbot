@@ -9,9 +9,9 @@ function ProfilePage() {
   return (
     <div className='main-profile'>
     <div className='header-profile'>
-      <img className='star-profile-1' src={star} alt="star-image" />
+      <img className='star-profile-1 up' src={star} alt="star-image" />
       <UserProfile />
-      <img className='star-profile-2'src={star} alt="star-image" />
+      <img className='star-profile-2 up'src={star} alt="star-image" />
     </div>
     <div>
       <ReadingsList />

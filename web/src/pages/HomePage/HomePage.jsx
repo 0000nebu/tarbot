@@ -16,8 +16,8 @@ function HomePage() {
           <img className="copas" src={homeImage} alt="home-image" />
           <img className="title" src={title} alt="title-image" />
         </div>
-        <img className='star' src={star} alt="star-image" />
-        <img className='star-2' src={star} alt="star-image" />
+        <img className='star up' src={star} alt="star-image" />
+        <img className='star-2 up' src={star} alt="star-image" />
         <p className="text-intro"> Tarbot your Modern Tarot Hub 🔮 Unleash the power of cosmic wisdom with our contemporary approach to tarot readings. Our user-friendly platform blends ancient mysticism with modern insights, providing personalized and judgment-free guidance. Whether you're a seasoned seeker or a tarot novice, join our vibrant journey of self-discovery. Embrace your magic, unlock your destiny ✨ </p>
         <div className='text-image'>
           <img className='flores' src={flores}alt="flores-image" />

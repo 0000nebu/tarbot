@@ -3,25 +3,12 @@ import './InstructionsPage.css'
 import login from '../../assets/login.png'
 import { gsap } from "gsap";   
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Link } from "react-router-dom";
 gsap.registerPlugin(ScrollTrigger);
 
 
 function InstructionsPage() {
 
-  let tl = gsap.timeline({
-    
-    scrollTrigger: {
-      trigger: ".login-image-home",
-      start: "top center", // when the top of the trigger hits the top of the viewport
-      end: "bottom center", // end after scrolling 500px beyond the start
-    },
-
-  });
-
-  tl.to('.login-image-home', {
-    x: 800
-  })
-  
   return (
     <div className='text-instrusctions'>
 
@@ -30,9 +17,9 @@ function InstructionsPage() {
 
 First up, let's dive into the past. </p> 
 <div className='cards-past-present-future'>
-<img src="https://res.cloudinary.com/dtuski5bi/image/upload/v1698856556/tarbot/wblpxa9qzdi7edshzv3x.png" alt="past" />
-<img src="https://res.cloudinary.com/dtuski5bi/image/upload/v1698856556/tarbot/wblpxa9qzdi7edshzv3x.png" alt="past" />
-<img src="https://res.cloudinary.com/dtuski5bi/image/upload/v1698856556/tarbot/wblpxa9qzdi7edshzv3x.png" alt="past" />
+<img  className='cards up' src="https://res.cloudinary.com/dtuski5bi/image/upload/v1698856556/tarbot/wblpxa9qzdi7edshzv3x.png" alt="past" />
+<img className='cards up' src="https://res.cloudinary.com/dtuski5bi/image/upload/v1698856556/tarbot/wblpxa9qzdi7edshzv3x.png" alt="past" />
+<img className='cards up' src="https://res.cloudinary.com/dtuski5bi/image/upload/v1698856556/tarbot/wblpxa9qzdi7edshzv3x.png" alt="past" />
 </div>
 
 <div className='text-past-present-future'>
@@ -51,7 +38,7 @@ Oh, but wait—cue the guiding card! </p>
 </div>
 
 <div className= 'guidecard-explanation'>
-<img src="https://res.cloudinary.com/dtuski5bi/image/upload/v1698856556/tarbot/wblpxa9qzdi7edshzv3x.png" alt="past" />
+<img className='cards up' src="https://res.cloudinary.com/dtuski5bi/image/upload/v1698856556/tarbot/wblpxa9qzdi7edshzv3x.png" alt="past" />
 <p>🌈 This bad boy is like your GPS through the cosmic highway. It's the North Star guiding you, a trusty sidekick helping you navigate the twists and turns of your journey.</p>
 
 
@@ -59,6 +46,9 @@ Oh, but wait—cue the guiding card! </p>
 </div>
 <p>So there you have it, Tarot Squaaaad! Past, present, future, and the guiding card—a magical combo unlocking the secrets of your cosmic adventure. Ready for the ride? 🔮✨
 </p>
+<Link to="/reading-type">
+            <button className="button home-button">i'm ready</button>
+          </Link>
  </div>
   )
 }

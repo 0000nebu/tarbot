@@ -20,8 +20,8 @@ export function updateAdviceLove( id, data) {
     return service.post(`/readings/${id}/adviceLove`, data);
 }
 
-export function updateAdviceEmoji( id, data) {
-    return service.post(`/readings/${id}/adviceEmoji`, data);
+export function updateAdviceWork( id, data) {
+    return service.post(`/readings/${id}/adviceWork`, data);
 }
 
 
