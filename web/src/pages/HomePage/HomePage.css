@@ -45,6 +45,7 @@ body {
     margin: auto;
     padding-top: 100px;
     text-align: center;
+    
 
 }
 
@@ -108,12 +109,15 @@ body {
   flex-direction: row;
   justify-content: space-between;
   margin-top: 300px;
+  
 }
 .text-image img{
     width:300px;
     gap: 200px;
     margin-top: -200px;
   }
+
+  
 
 
 

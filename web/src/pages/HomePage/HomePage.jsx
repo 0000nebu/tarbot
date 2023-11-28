@@ -1,7 +1,7 @@
 import React from 'react'
-import homeImage from '../../assets/copas.png'
-import flores from '../../assets/flores.png'
-import calavera from '../../assets/calavera.png'
+import homeImage from '../../assets/copas.gif'
+import flores from '../../assets/flores.gif'
+import calavera from '../../assets/calavera.gif'
 import title from '../../assets/name.png'
 import star from '../../assets/estrella.png'
 import { Link } from "react-router-dom";
@@ -18,7 +18,7 @@ function HomePage() {
         </div>
         <img className='star up' src={star} alt="star-image" />
         <img className='star-2 up' src={star} alt="star-image" />
-        <p className="text-intro"> Tarbot your Modern Tarot Hub 🔮 Unleash the power of cosmic wisdom with our contemporary approach to tarot readings. Our user-friendly platform blends ancient mysticism with modern insights, providing personalized and judgment-free guidance. Whether you're a seasoned seeker or a tarot novice, join our vibrant journey of self-discovery. Embrace your magic, unlock your destiny ✨ </p>
+        <p className="text-intro up"> Tarbot your Modern Tarot Hub 🔮 Unleash the power of cosmic wisdom with our contemporary approach to tarot readings. Our user-friendly platform blends ancient mysticism with modern insights, providing personalized and judgment-free guidance. Whether you're a seasoned seeker or a tarot novice, join our vibrant journey of self-discovery. Embrace your magic, unlock your destiny ✨ </p>
         <div className='text-image'>
           <img className='flores' src={flores}alt="flores-image" />
       

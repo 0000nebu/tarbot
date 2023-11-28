@@ -15,7 +15,7 @@ import './LoginPage/LoginPage.css'
     function handleSignIn(data) {
       create(data)
         .then(() => {
-          navigate('/doSomething')
+          navigate('/login')
         })
     }
 
