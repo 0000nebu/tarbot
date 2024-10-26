@@ -15,5 +15,8 @@ app.use(session.session)
 const api = require('./config/routes.config');
 app.use('/v1', api)
 
+app.use(require('./web'));
+
+
 const port = process.env.PORT || 3000;
-app.listen(port, () => console.info('Application is running at port 3000')) 
+app.listen(port, () => console.info(`Application is running at port ${port}`)) 

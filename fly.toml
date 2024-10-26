@@ -1,0 +1,31 @@
+# fly.toml app configuration file generated for tarbot on 2024-10-26T11:46:45+02:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = 'tarbot'
+primary_region = 'cdg'
+
+[env]
+  PORT= '3000'
+  ALLOWED_ORIGINS = 'https://tarbot.fly.dev'
+  SESSION_SECURE = 'true'
+
+
+[build]
+[build.args]
+  VITE_BASE_API_URL = 'https://tarbot.fly.dev/v1'
+
+
+[http_service]
+  internal_port = 3000
+  force_https = true
+  auto_stop_machines = 'stop'
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ['app']
+
+[[vm]]
+  memory = '1gb'
+  cpu_kind = 'shared'
+  cpus = 1

@@ -7,3 +7,4 @@ Card.create(data)
   .then((cards) => {
       console.log("cards created")})
   .catch((error) => console.error(error))
+

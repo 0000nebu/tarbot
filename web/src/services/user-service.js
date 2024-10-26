@@ -1,20 +1,20 @@
 import service from './base-api'
 
-export function login(data) {
+export async function login(data) {
     return service.post('/login', data)
         .then(response => response.data)
 }
 
-export function create(data) {
+export async function create(data) {
     return service.post('/users', data)
 }
 
-export function userDetail(data) {
+export async function userDetail(data) {
     return service.get('/detail', {data})
     
 }
 
-export function logoutApi() {
+export async function logoutApi() {
     return service.post("/logout");
   }
   
